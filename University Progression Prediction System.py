@@ -218,3 +218,48 @@ def staff_version():
             staff_version()
         print()
         main_menu
+
+#defining the main menu of progression outcome predictor------------------------------------- 
+
+def main_menu():
+    print("------------------------------------------------------------")
+    print(":::::::::::    PROGRESSION OUTCOME PREDICTOR     :::::::::::")
+    print("------------------------------------------------------------")
+    print()
+
+    #getting user inputs
+        
+    print("1.Student Version \n"
+          "2.Staff version with Histogram \n"
+          "3.Exit")
+    print()
+
+    # exception handling and conditions used to open user preferred options
+        
+
+    option = input("Enter your preferred option :")
+    if option == "1": #option to open Studen version
+        print()
+        print("-------------------STUDENT-VERSION----------------------")
+        print()
+        student_version()
+                
+    elif option == "2": #option to open staff version
+        print()
+        print("-------------STAFF-VERSION-WITH HISTOGRAM---------------")
+        print()
+        staff_version()
+        print()
+    elif option == "3": #option to exit the program
+        print()
+        print("------------------Exiting Program-----------------------")
+        quit()
+    else:
+        print("Please Try Again with valid Options...") #error message for invalid options
+        print("\n")
+        main_menu()
+
+        
+        
+
+main_menu()
