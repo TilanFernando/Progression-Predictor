@@ -143,3 +143,30 @@ def multiple_outcomes_or_exit_to_histogram():
               print("\n")
               multiple_outcomes_or_exit_to_histogram()
               break
+
+#Function to print the histogram
+
+def histogram():
+    global progress_count,module_trailer_count,module_retriever_count,exclude_count,count
+    while True:
+            print("----------------------------------------------------------")
+            print("                        HISTOGRAM                         ")
+            
+            print()
+          
+            print("Progress                           (",(progress_count),"):",progress_count * '*')
+            
+            print("Progress(Module-Trailer)           (",(module_trailer_count),"):",module_trailer_count * '*')
+
+            print("Do not Progress - Module Retriever (",(module_retriever_count),"):",module_retriever_count * '*')
+         
+            print("Exclude                            (",(exclude_count),"):",exclude_count * '*')
+            
+            print()
+            
+            print(count,"Student Outcomes in Total.") # Displaying total outcomes
+
+            print("----------------------------------------------------------")
+
+            print("\n")
+            break     
