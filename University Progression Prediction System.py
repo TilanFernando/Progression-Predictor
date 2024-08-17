@@ -181,3 +181,11 @@ def input_progression_data_list():
     print("Progress (Module-Trailer) : ",(input_progression_data["Progress (module trailer)"]))
     print("Do not Progress – Module Retriever : ",(input_progression_data["Do not Progress – module retriever"]))
     print("Exclude : ",(input_progression_data["Exclude"]))
+
+#function to display input progression data into text file------------------------------------------------- 
+
+def textfile():
+
+    f = open("inputprogressiondata.txt", "a")
+    f.write("Progress : \nProgress (module trailer) : \nDo not Progress – module retriever : \nExclude : ")
+    f.close()
