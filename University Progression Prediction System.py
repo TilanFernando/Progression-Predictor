@@ -111,3 +111,35 @@ def progression_outcome():
                 exclude_count += 1
                 input_progression_data["Exclude"].append(str(credit_pass) + ", " + str(credit_defer) + ", " + str(credit_fail))#according to progression outcome obtaining input progression data 
                 break
+
+#Function to add multiple outcomes or exit to view histogram ---------------------------------------------------
+        
+def multiple_outcomes_or_exit_to_histogram():
+    global multiple_outcomes
+
+    while True:
+        try:
+            print("\n")
+            print("Would You Like to enter another set of values?")
+            
+            multiple_outcomes = str(input("Enter 'q' to Quit or 'y' to add another student : "))
+
+           
+            if multiple_outcomes == "y":
+                    print("\n")
+                    staff_version()
+            else:
+                if multiple_outcomes == "q":
+                        print("\n")
+                        histogram()
+                        input_progression_data_list()
+                        textfile()
+                        break
+                        print("\n")
+                 
+        except ValueError:
+              print("----------------------------------------------------------")
+              print("--->> Invalid Input !!!")
+              print("\n")
+              multiple_outcomes_or_exit_to_histogram()
+              break
