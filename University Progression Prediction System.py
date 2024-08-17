@@ -64,7 +64,7 @@ def valid_credits():
                 else:
                     break
 
-        #Defining function to get the progression outcome-----------------------------------------------------------
+#Defining function to get the progression outcome-----------------------------------------------------------
 
 def progression_outcome():
 
