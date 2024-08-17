@@ -189,3 +189,32 @@ def textfile():
     f = open("inputprogressiondata.txt", "a")
     f.write("Progress : \nProgress (module trailer) : \nDo not Progress – module retriever : \nExclude : ")
     f.close()
+
+#function to display student version------------------------------------------------------------ 
+
+def student_version():
+    valid_credits()
+    total_credits = credit_pass + credit_defer + credit_fail #validating Total credits entered
+    if total_credits == 120:
+        progression_outcome() # calling progression outcome function if total credits are valid
+    else:
+        print("--->> Total incorrect") #printing error message if invalid total
+        print("\n")
+        student_version()
+    print()
+        
+
+#function to display staff version----------------------------------------------------------------------- 
+    
+def staff_version():
+        valid_credits()
+        total_credits = credit_pass + credit_defer + credit_fail #validating Total credits entered
+        if total_credits == 120:
+            progression_outcome() # calling progression outcome function if total credits are valid
+            multiple_outcomes_or_exit_to_histogram() #caling function to add multiple outcomes or exit to histogram
+        else:
+            print("--->> Total incorrect") #printing error message if invalid total
+            print("\n")
+            staff_version()
+        print()
+        main_menu
