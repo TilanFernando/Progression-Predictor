@@ -170,3 +170,14 @@ def histogram():
 
             print("\n")
             break     
+
+#function to display input progression data----------------------------------- 
+
+def input_progression_data_list():
+
+    print("(PART 2)")
+    print()
+    print("Progress :",(input_progression_data["Progress"]))
+    print("Progress (Module-Trailer) : ",(input_progression_data["Progress (module trailer)"]))
+    print("Do not Progress – Module Retriever : ",(input_progression_data["Do not Progress – module retriever"]))
+    print("Exclude : ",(input_progression_data["Exclude"]))
